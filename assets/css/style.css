@@ -112,12 +112,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.social-links {
+#header .social-links {
   margin-top: 40px;
   display: flex;
 }
 
-.social-links a {
+#header .social-links a {
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -143,10 +143,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 30px;
   }
-  .social-links {
+  #header.social-links {
     margin-top: 15px;
   }
-  .container {
+  #header.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,7 +288,6 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #000;
 }
-
 /* Header Top */
 #header.header-top {
   height: 80px;
@@ -350,11 +349,6 @@ section.section-show {
 section .container {
   background: rgba(255, 255, 255, 0.8);
   padding: 30px 60px;
-}
-
-section .tempcontainer {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0px 90px;
 }
 
 @media (max-width: 768px) {
@@ -423,25 +417,6 @@ section .tempcontainer {
   box-sizing: border-box;
 }
 
-.about-me body {
-  color: #555;
-  color: #7c8891;
-  font: 16px/22px "Proxima Nova", sans-serif;
-  background: #ebedee;
-  padding: 50px;
-  overflow: hidden;
-}
-@media (max-width: 768px) {
-  body {
-    padding: 30px;
-  }
-}
-@media (max-width: 420px) {
-  body {
-    padding: 10px;
-  }
-}
-
 .about-me h1, h2 {
   margin-top: 10px;
 }
@@ -488,6 +463,48 @@ section .tempcontainer {
   width: 250px;
   margin-bottom: 10px;
 }
+
+#about .social-links {
+  margin-top: 40px;
+  display: flex;
+}
+
+#about .social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#about .social-links a:hover {
+  background: #007bff;
+}
+
+@media (max-width: 992px) {
+  #about h1 {
+    font-size: 36px;
+  }
+  #about h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #about .social-links {
+    margin-top: 15px;
+  }
+  #about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -662,13 +679,8 @@ body a {
   font-size: 16px; 
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
+  margin-bottom: 30px;
 }
 
 .portfolio #portfolio-flters {
@@ -824,4 +836,3 @@ body a {
 .portfolio .portfolio-wrap:hover .portfolio-info h4{
   color: #fff;
 }
-
