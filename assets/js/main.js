@@ -1,9 +1,3 @@
-/**
-* Template Name: Personal - v2.2.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 !(function($) {
   "use strict";
 
@@ -150,12 +144,52 @@
     });
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+var heading = document.querySelector("h4");
+var data = ["Hello World, I'm Sam! ","I am a 21-year-old software engineer. "];
+var j = 0;
+var i = 0;
+
+
+var k;
+
+function typing(){
+    if(heading.innerHTML.length === data[j].length){
+        k = 0;
+        setTimeout(del, 1200);
+    }
+    if(i<data[j].length){
+        heading.innerHTML += data[j].charAt(i);
+        i++;
+        setTimeout(typing, 50);
+    }
+    else{
+        j++;
+        i = 0;
+        k = 0;
+        setTimeout(typing, 3000);
+    }
+    if(j === data.length){
+        j = 0;
+    }
+}
+    
+// var check = document.getElementById("check");
+// var k = 0;
+function del(){
+    if(heading.innerHTML.length == 0){
+        clearTimeout(time);
+    }
+    else{
+    heading.innerHTML = heading.innerHTML.slice(0, heading.innerHTML.length - k);
+    k++;
+    var time = setTimeout(del, 100);
+    }
+}
+
+typing();
+
+
+
+
 
 })(jQuery);
