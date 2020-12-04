@@ -55,6 +55,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size:20px;
 }
 
+.text {
+  font-weight: 100;
+  font-size: 26px;
+  color: #000;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+
+}
+.dud {
+  color: #dddd;
+}
 
 
 /*--------------------------------------------------------------
