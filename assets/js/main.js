@@ -247,9 +247,10 @@ class TextScramble {
 // ——————————————————————————————————————————————————
 
 const phrases = [
-'Software Engineer',
-'Robotics Enthusiast',
-'Researcher'];
+  'Software Engineer',
+  'Robotics Enthusiast',
+  'Researcher'
+];
 
 
 const el = document.querySelector('.text');

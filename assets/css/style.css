@@ -39,30 +39,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #343a40;
 }
 
-.lllol { 
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  color: #007bff;
-}
-
-.llllol {
-  color: #007bff;
-  font-size:23px;
-}
-
-.lmao {
-  color: rgba(0, 0, 0, 0.8);
-  font-size:20px;
-}
-
 .text {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 26px;
   color: #000;
   font-family: "Helvetica", sans-serif;
   text-align: center;
 
 }
+
 .dud {
   color: #dddd;
 }
@@ -106,12 +91,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
   color: rgba(0, 0, 0, 1);
   text-align: center;
-}
-
-#header h2 span {
-  color: #000;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 6px;
 }
 
 #header h4 {
