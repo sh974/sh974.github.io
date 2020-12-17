@@ -12,6 +12,8 @@ body::before {
   position: fixed;
 /*  background: rgb(255, 230, 204); 
 */  background-size: cover;
+  background: rgb(227,237,250);
+background: linear-gradient(0deg, rgba(227,237,250,1) 0%, rgba(250,251,252,1) 100%);
   left: 0;
   right: 0;
   top: 0;
@@ -149,7 +151,8 @@ h1, h2, h3, h4, h5, h6 {
 .heading {
   font-size: 6rem;
   letter-spacing: 6px;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .heading h6 {
@@ -353,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(250,251,252,1)
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -405,7 +408,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgb(255, 255, 255);
+/*  background: rgb(255, 255, 255);*/
   padding: 30px 60px;
 
 }
@@ -583,6 +586,24 @@ section .container {
   }
 }
 
+#about ul
+{
+  list-style-type:none;
+  margin-top:-3px;
+  padding:0;
+}
+.skill-set li
+{
+  background: linear-gradient(to bottom right, #fcba7e, #e46e4a);
+  border-radius:6px;
+  font-size: 12px;
+  color:#FFF;
+  display:inline-block;
+  list-style:none;
+  margin:5px 5px 0 0;
+  padding:5px;
+  text-align:justify;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -775,8 +796,16 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+.button1::before, .button1::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .portfolio #portfolio-flters {
@@ -848,23 +877,6 @@ button {
   align-items: center;
 }
 
-
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-  color: #007bff;
-}
-
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #fff;
@@ -878,33 +890,28 @@ button {
 }
 
 
-.portfolio .portfolio-wrap .portfolio-info p {
+.portfolio .portfolio-wrap .portfolio-info h6 {
   color:  #fff;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  margin-top: -5px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info:hover p {
+.portfolio .portfolio-wrap:hover .portfolio-info:hover h6 {
   color:  #000;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
-  text-align: center;
-  z-index: 4;
+.portfolio .portfolio-wrap .portfolio-info p {
+  display: none;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
-  color:  #343a40;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #007bff;
+.portfolio .portfolio-wrap:hover .portfolio-info:hover p{
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding: 5px 12px 0px;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -929,6 +936,3 @@ button {
   right: 15px;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info h4{
-  color: #fff;
-}
