@@ -248,7 +248,7 @@ class TextScramble {
 
 const phrases = [
   'Software Engineer',
-  'Robotics Enthusiast',
+  'Tech Enthusiast',
   'Researcher'
 ];
 

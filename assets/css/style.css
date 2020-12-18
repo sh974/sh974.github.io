@@ -604,6 +604,15 @@ section .container {
   padding:5px;
   text-align:justify;
 }
+
+#about a {
+  color: #00008B;
+  font-weight: 350;
+}
+
+#about a:hover {
+  text-decoration: underline;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
